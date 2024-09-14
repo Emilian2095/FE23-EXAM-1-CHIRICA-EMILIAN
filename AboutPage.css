@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 100px;
+    background-image: url(images/vegetable-set.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+.nav-links{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+    gap: 1.2rem;
+    margin-right: 2rem;
+}
+.nav-links a{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: 5px double green;
+    color: teal;
+}
+.nav-links a:hover{
+    background-color: tomato;
+    color: lightblue;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px teal;
+}
+h1{
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 3rem;
+    color: tomato;
+    
+}
+.content{
+    display: flex;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+.content p{
+    color: whitesmoke;
+    padding: 1rem;
+    width: 50%;
+    font-size: 2rem;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+    margin-top: 15rem;
+    border-radius: 10px 10px 10px 10px ;    
+    
+}
+
+footer img {
+    width: 5rem;
+    border-radius: 10px;
+    font: 1.2rem;
+
+}
+
+ul, #contact{
+   display: flex;
+   gap: 1.5rem;
+   padding: .5rem;
+   font-size: 1.3rem;
+   color: whitesmoke;
+   font-weight: bold;
+   text-decoration: none;
+ }
+ #contact:hover{
+    background-color: tomato;
+    color: black;
+    padding: 1.5rem;
+    font-weight: bolder;
+ }
+ .fa-facebook{
+    color: rgba(0, 0, 255, 0.781);
+}
+.fa-square-instagram{
+    color: brown;
+}
+.fa-tiktok{
+    background-color: black;
+    color: aliceblue;
+}
+ 
+@media screen and (max-width: 480px) {
+    
+    body{
+        margin: 0 auto
+    }
+    .content{
+      display: block;
+       }
+       .content p{
+        width: 100%;
+       }
+       .photo{
+        margin: 1rem auto;
+       }
+       
+}
+
+@media screen and (max-width: 780px) {
+    
+    body{
+        margin: 0 auto
+    }
+    .content{
+      display: block;
+       }
+       .content p{
+        width: 100%;
+       }
+       .photo img{
+        margin: 1rem;
+        width: 100%;
+       }
+       
+}
+
+@media screen and (max-width: 900px) {
+    
+    body{
+        margin: 0 auto;
+    }
+    .content p {
+        width: 100%;
+    }
+    .photo img{
+        margin: 1rem;
+        width: 100%;
+       }
+       
+}
+
+
+

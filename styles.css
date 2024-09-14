@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+body{
+   margin-right: 50px;
+    margin-left: 50px;
+   background-color:rgba(255, 99, 71, 0.568) ; 
+}
+.container{
+   background-color: rgba(245, 245, 245, 0.767);
+   box-shadow: 0 5px 15px grey;
+}
+
+#logo{
+    width: 5rem;
+    border-radius: 10%;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    border-bottom: 1px solid black;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 0;
+    list-style: none;
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: black;
+}
+.nav-links a:hover{
+    color: tomato;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: gold;
+    border-radius: 10px;
+    font-style: italic;
+    box-shadow: 5px 5px 10px rgb(133, 133, 100);
+}
+
+.food-title{
+    display: flex;
+    justify-content: space-around;
+    padding: .5rem;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+
+.food-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    gap: 2rem;
+    margin: 3rem auto;
+}
+
+.card img{
+width: 100%;
+height: 100%;
+box-shadow: 5px -5px 10px grey;
+border-radius: 10px;
+}
+
+.card{
+    position: relative;
+}
+
+.card p{
+    position: absolute;
+    bottom: 0;;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: rgba(0, 0, 0, 0.527);
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: aliceblue;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0 0 15px 15px;
+}
+
+ footer{
+    background-color: black;
+ }  
+
+ .links, .media{ 
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem; 
+}
+
+.links a{
+    color: aliceblue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.links p{
+    color: aliceblue;
+}
+
+.media a{
+    color: aliceblue;
+}
+
+#copy{
+    color: aliceblue;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        margin: 0 10px;
+    }
+    .food-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body{
+        margin: 0 5px;
+    }
+    .food-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
