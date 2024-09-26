@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Blog</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/277778bc91.js"
       crossorigin="anonymous"
@@ -15,6 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
@@ -38,44 +46,117 @@
         <p>Lunch</p>
         <p>Dinner</p>
       </div>
-      <main class="food-cards">
-        <div class="card">
-          <img src="images/salmon-518032_640.jpg" alt="grilled-salmon-image" />
-          <p>Salmon</p>
+
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img
+              class="imgg"
+              src="images/salmon-518032_640.jpg"
+              alt="grilled-salmon-image"
+            />
+            <button class="btn">
+              <span class="overlaySpan">Salmon</span>
+            </button>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="images/pizza-5275191_640.jpg"
+              alt="pizza-image"
+              class="imgg"
+            />
+            <button class="btn">
+              <span class="overlaySpan">Pizza</span>
+            </button>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="images/ramen-7238665_640.jpg"
+              alt="ramen-img"
+              class="imgg"
+            />
+            <button class="btn">
+              <span class="overlaySpan">Ramen</span>
+            </button>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="images/ai-generated-9010446_640.jpg"
+              alt="burger-image"
+              class="imgg"
+            />
+            <button class="btn">
+              <span class="overlaySpan">Burger</span>
+            </button>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="images/tacos-al-pastor-4351813_640.jpg"
+              alt="tacos-image"
+              class="imgg"
+            />
+            <button class="btn">
+              <span class="overlaySpan">Tacos</span>
+            </button>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="images/duck-1024739_640.jpg"
+              alt="duck-with-rice-image"
+              class="imgg"
+            />
+            <button class="btn">
+              <span class="overlaySpan">Duck</span>
+            </button>
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="images/food-8151625_640.webp"
+              alt="carbonara-image"
+              class="imgg"
+            />
+            <button class="btn">
+              <span class="overlaySpan">Pasta</span>
+            </button>
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="images/croissant-6562091_640.jpg"
+              alt="croissant-image"
+              class="imgg"
+            />
+            <button class="btn">
+              <span class="overlaySpan">Croissant</span>
+            </button>
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="images/waffles-5192625_640.jpg"
+              alt="waffles-image"
+              class="imgg"
+            />
+            <button class="btn">
+              <span class="overlaySpan">Waffles</span>
+            </button>
+          </div>
         </div>
-        <div class="card">
-          <img src="images/pizza-5275191_640.jpg" alt="pizza-image" />
-          <p>Pizza</p>
-        </div>
-        <div class="card">
-          <img src="images/ramen-7238665_640.jpg" alt="ramen-img" />
-          <p>Ramen</p>
-        </div>
-        <div class="card">
-          <img src="images/ai-generated-9010446_640.jpg" alt="burger-image" />
-          <p>Burger</p>
-        </div>
-        <div class="card">
-          <img src="images/tacos-al-pastor-4351813_640.jpg" alt="tacos-image" />
-          <p>Tacos</p>
-        </div>
-        <div class="card">
-          <img src="images/duck-1024739_640.jpg" alt="duck-with-rice-image" />
-          <p>Duck</p>
-        </div>
-        <div class="card">
-          <img src="images/food-8151625_640.webp" alt="carbonara-image" />
-          <p>Pasta</p>
-        </div>
-        <div class="card">
-          <img src="images/croissant-6562091_640.jpg" alt="croissant-image" />
-          <p>Croissant</p>
-        </div>
-        <div class="card">
-          <img src="images/waffles-5192625_640.jpg" alt="waffles-image" />
-          <p>Waffles</p>
-        </div>
-      </main>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+
       <footer>
         <div class="links">
           <a href="AboutPage.html">About</a>
@@ -106,5 +187,7 @@
         <p id="copy">&copy;CodeFactory 2024</p>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

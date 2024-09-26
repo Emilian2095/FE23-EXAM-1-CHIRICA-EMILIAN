@@ -11,6 +11,8 @@ body{
 .container{
    background-color: rgba(245, 245, 245, 0.767);
    box-shadow: 0 5px 15px grey;
+   height: 100vh;
+
 }
 
 #logo{
@@ -57,27 +59,49 @@ body{
     border-bottom: 1px solid black;
     font-weight: bold;
 }
-
+/* /* 
 .food-cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     max-width: 1200px;
     gap: 2rem;
-    margin: 3rem auto;
-}
+    margin: 3rem auto;} */
+ */
 
-.card img{
+.swiper img{
 width: 100%;
 height: 100%;
 box-shadow: 5px -5px 10px grey;
 border-radius: 10px;
 }
 
-.card{
-    position: relative;
+img {
+    width: 100%;
+    border-radius: 15px;
 }
+/* p{
+    border-radius: 0 0 15px 15px;
+} */
 
-.card p{
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 95.4%;
+}
+.swiper {
+    width: 70vh;
+    height: 70vh;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+/* .card{
+    position: relative;
+} */
+
+.swiper .btn{
     position: absolute;
     bottom: 0;;
     left: 50%;
@@ -94,6 +118,9 @@ border-radius: 10px;
 
  footer{
     background-color: black;
+    position: fixed;
+    width: 95.4vw;
+    bottom: 0;
  }  
 
  .links, .media{ 
@@ -122,6 +149,35 @@ border-radius: 10px;
     text-align: center;
 }
 
+.ani{ 
+    animation: imgScale 2s ease;
+    
+}
+.imgg{
+     width: 100%;
+     height: 100%;
+    margin-top: 5rem;
+    transition: all 2s ease;
+}
+
+
+@keyframes imgScale {
+    0%{
+        scale: 1
+    }
+    50%{
+        scale: 1.5
+    }
+    100%{
+        scale: 1
+    }
+}
+/* .swiper-wrapper{
+    width: 600px;
+    height: 600px;
+} */
+
+
 @media screen and (max-width: 768px) {
     body{
         margin: 0 10px;
@@ -139,6 +195,11 @@ border-radius: 10px;
         grid-template-columns: 1fr;
     }
 }
-
-
-
+.overlaySpan{
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+.animate__bounce{
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+  }
